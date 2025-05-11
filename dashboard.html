@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GDSP - Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="dashboard.js" defer></script>
+</head>
+<body class="bg-gray-100 text-gray-800 flex flex-col min-h-screen">
+
+    <!-- Header -->
+    <header class="bg-blue-600 text-white py-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold">GDSP Dashboard</h1>
+            <nav>
+                <button onclick="logout()" class="bg-red-600 text-white py-2 px-4 rounded">Logout</button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto my-8 flex-grow">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+            <!-- Meal Plan Card -->
+            <div class="bg-white p-6 rounded-xl shadow-md">
+                <h3 class="text-xl font-semibold">Meal Plan</h3>
+                <p>View your personalized meal suggestions.</p>
+                <button onclick="viewMealPlan()" class="mt-4 bg-blue-600 text-white py-2 px-4 rounded">View</button>
+            </div>
+
+            <!-- Blood Sugar Tracking Card -->
+            <div class="bg-white p-6 rounded-xl shadow-md">
+                <h3 class="text-xl font-semibold">Blood Sugar Tracking</h3>
+                <p>Track and log your blood sugar levels.</p>
+                <button onclick="viewBloodSugar()" class="mt-4 bg-blue-600 text-white py-2 px-4 rounded">View</button>
+            </div>
+
+            <!-- Exercise Plan Card -->
+            <div class="bg-white p-6 rounded-xl shadow-md">
+                <h3 class="text-xl font-semibold">Exercise Plan</h3>
+                <p>Get safe pregnancy exercises to stay active.</p>
+                <button onclick="viewExercisePlan()" class="mt-4 bg-blue-600 text-white py-2 px-4 rounded">View</button>
+            </div>
+
+            <!-- Appointments Card -->
+            <div class="bg-white p-6 rounded-xl shadow-md">
+                <h3 class="text-xl font-semibold">Appointments</h3>
+                <p>View and schedule doctor appointments.</p>
+                <button onclick="viewAppointments()" class="mt-4 bg-blue-600 text-white py-2 px-4 rounded">View</button>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-blue-600 text-white py-6 mt-auto">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2025 GDSP. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

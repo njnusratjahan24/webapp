@@ -2,31 +2,31 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>GDSP - Appointments</title>
+    <title>GDSP - Blood Sugar Tracking</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="js/appointments.js" defer></script>
+    <script src="js/bloodSugar.js" defer></script>
 </head>
 <body class="bg-gray-100 text-gray-800 flex flex-col min-h-screen">
 
     <!-- Header -->
     <header class="bg-blue-600 text-white py-4">
         <div class="container mx-auto flex justify-between items-center">
-            <h1 class="text-2xl font-bold">Appointments</h1>
+            <h1 class="text-2xl font-bold">Blood Sugar Tracking</h1>
             <button onclick="goBack()" class="bg-blue-600 text-white py-2 px-4 rounded">Back to Dashboard</button>
         </div>
     </header>
 
     <!-- Main Content -->
     <main class="container mx-auto my-8 flex-grow">
-        <h2 class="text-xl font-semibold mb-4">Schedule an Appointment</h2>
+        <h2 class="text-xl font-semibold mb-4">Log Blood Sugar</h2>
         <div class="bg-white p-6 rounded-xl shadow-md">
-            <input type="date" id="appointmentDate" class="p-2 mb-4 w-full border rounded">
-            <button onclick="scheduleAppointment()" class="bg-blue-600 text-white py-2 px-4 rounded w-full">Schedule</button>
+            <input type="number" id="bloodSugar" placeholder="Enter your blood sugar level" class="p-2 mb-4 w-full border rounded">
+            <button onclick="logBloodSugar()" class="bg-blue-600 text-white py-2 px-4 rounded w-full">Log Blood Sugar</button>
         </div>
 
-        <h2 class="text-xl font-semibold mt-6">Upcoming Appointments</h2>
-        <div id="appointmentsList" class="bg-white p-6 rounded-xl shadow-md mt-4">
-            <p>No appointments scheduled yet.</p>
+        <h2 class="text-xl font-semibold mt-6">Recent Logs</h2>
+        <div id="bloodSugarLogs" class="bg-white p-6 rounded-xl shadow-md mt-4">
+            <p>No logs yet.</p>
         </div>
     </main>
 

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GDSP - Meal Plans</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="js/mealPlans.js" defer></script>
+</head>
+<body class="bg-gray-100 text-gray-800 flex flex-col min-h-screen">
+
+    <!-- Header -->
+    <header class="bg-blue-600 text-white py-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold">Meal Plans</h1>
+            <button onclick="goBack()" class="bg-blue-600 text-white py-2 px-4 rounded">Back to Dashboard</button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto my-8 flex-grow">
+        <h2 class="text-xl font-semibold mb-4">Recommended Meal Plans</h2>
+        <div class="bg-white p-6 rounded-xl shadow-md">
+            <h3 class="font-semibold">Breakfast</h3>
+            <ul class="list-disc ml-6">
+                <li>Oatmeal with fresh berries</li>
+                <li>Scrambled eggs with spinach</li>
+            </ul>
+        </div>
+
+        <div class="bg-white p-6 rounded-xl shadow-md mt-6">
+            <h3 class="font-semibold">Lunch</h3>
+            <ul class="list-disc ml-6">
+                <li>Grilled chicken salad</li>
+                <li>Quinoa with roasted vegetables</li>
+            </ul>
+        </div>
+
+        <div class="bg-white p-6 rounded-xl shadow-md mt-6">
+            <h3 class="font-semibold">Dinner</h3>
+            <ul class="list-disc ml-6">
+                <li>Baked salmon with broccoli</li>
+                <li>Steamed brown rice</li>
+            </ul>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-blue-600 text-white py-6 mt-auto">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2025 GDSP. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

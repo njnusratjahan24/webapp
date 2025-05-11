@@ -2,31 +2,37 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>GDSP - Appointments</title>
+    <title>GDSP - Exercise Plans</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="js/appointments.js" defer></script>
+    <script src="js/exercisePlans.js" defer></script>
 </head>
 <body class="bg-gray-100 text-gray-800 flex flex-col min-h-screen">
 
     <!-- Header -->
     <header class="bg-blue-600 text-white py-4">
         <div class="container mx-auto flex justify-between items-center">
-            <h1 class="text-2xl font-bold">Appointments</h1>
+            <h1 class="text-2xl font-bold">Exercise Plans</h1>
             <button onclick="goBack()" class="bg-blue-600 text-white py-2 px-4 rounded">Back to Dashboard</button>
         </div>
     </header>
 
     <!-- Main Content -->
     <main class="container mx-auto my-8 flex-grow">
-        <h2 class="text-xl font-semibold mb-4">Schedule an Appointment</h2>
+        <h2 class="text-xl font-semibold mb-4">Recommended Exercises</h2>
         <div class="bg-white p-6 rounded-xl shadow-md">
-            <input type="date" id="appointmentDate" class="p-2 mb-4 w-full border rounded">
-            <button onclick="scheduleAppointment()" class="bg-blue-600 text-white py-2 px-4 rounded w-full">Schedule</button>
+            <h3 class="font-semibold">Stretching</h3>
+            <ul class="list-disc ml-6">
+                <li>Cat-Cow Stretch</li>
+                <li>Seated Forward Fold</li>
+            </ul>
         </div>
 
-        <h2 class="text-xl font-semibold mt-6">Upcoming Appointments</h2>
-        <div id="appointmentsList" class="bg-white p-6 rounded-xl shadow-md mt-4">
-            <p>No appointments scheduled yet.</p>
+        <div class="bg-white p-6 rounded-xl shadow-md mt-6">
+            <h3 class="font-semibold">Strength Training</h3>
+            <ul class="list-disc ml-6">
+                <li>Bodyweight Squats</li>
+                <li>Wall Push-ups</li>
+            </ul>
         </div>
     </main>
 
