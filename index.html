@@ -1,62 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dashboard - Gestational Diabetes Care</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <title>GDSP - Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-  <!-- Header Section -->
-  <header>
-    <div class="container">
-      <h1>Gestational Diabetes Care</h1>
-      <nav>
-        <ul>
-          <li><a href="index.html">Dashboard</a></li>
-          <li><a href="mealplan.html">Meal Plans</a></li>
-          <li><a href="bloodsugartracking.html">Blood Sugar Tracking</a></li>
-          <li><a href="exercise.html">Exercise Plans</a></li>
-          <li><a href="appointment.html">Doctor Appointments</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+<body class="bg-gray-100 text-gray-800">
 
-  <!-- Dashboard Section -->
-  <section class="dashboard">
-    <div class="container">
-      <h2>Your Dashboard</h2>
-      <div class="dashboard-grid">
-        <div class="card">
-          <h3>Blood Sugar Levels</h3>
-          <p>Track your daily readings.</p>
-          <a href="blood-sugar.html" class="btn">View Report</a>
+    <!-- Header -->
+    <header class="bg-blue-600 text-white py-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold">GDSP</h1>
+            <nav>
+                <a href="login.html" class="mr-4 hover:underline">Login</a>
+                <a href="register.html" class="hover:underline">Register</a>
+            </nav>
         </div>
-        <div class="card">
-          <h3>Meal Plans</h3>
-          <p>Get personalized meal suggestions.</p>
-          <a href="meal-plans.html" class="btn">View Plans</a>
-        </div>
-        <div class="card">
-          <h3>Exercise Plans</h3>
-          <p>Find pregnancy-safe workouts.</p>
-          <a href="exercise.html" class="btn">View Exercises</a>
-        </div>
-        <div class="card">
-          <h3>Doctor Appointments</h3>
-          <p>Schedule and manage appointments.</p>
-          <a href="appointments.html" class="btn">Book Now</a>
-        </div>
-      </div>
-    </div>
-  </section>
+    </header>
 
-  <!-- Footer Section -->
-  <footer>
-    <div class="container">
-      <p>&copy; 2023 Gestational Diabetes Care. All rights reserved.</p>
-    </div>
-  </footer>
+    <!-- Hero Section -->
+    <section class="bg-blue-100 py-16 text-center">
+        <h2 class="text-4xl font-semibold mb-4">Manage Gestational Diabetes Effectively</h2>
+        <p class="text-lg">Personalized meal plans, blood sugar tracking, and more</p>
+    </section>
+
+    <!-- Main Content -->
+    <main class="container mx-auto my-8">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- Row 1 -->
+            <div class="bg-white p-6 rounded-xl shadow-md">
+                <h3 class="text-xl font-semibold">Personalized Meal Plans</h3>
+                <p>Tailored meal recommendations based on your dietary preferences.</p>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-md">
+                <h3 class="text-xl font-semibold">Blood Sugar Monitoring</h3>
+                <p>Log and track your blood sugar levels with ease.</p>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-md">
+                <h3 class="text-xl font-semibold">Exercise Guidelines</h3>
+                <p>Safe workout plans designed for pregnancy.</p>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
+            <!-- Row 2 -->
+            <div class="bg-white p-6 rounded-xl shadow-md">
+                <h3 class="text-xl font-semibold">Doctor Appointments</h3>
+                <p>Schedule and manage your healthcare visits.</p>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-md">
+                <h3 class="text-xl font-semibold">Progress Tracking</h3>
+                <p>Visualize your health data over time.</p>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-md">
+                <h3 class="text-xl font-semibold">Support Community</h3>
+                <p>Connect with others managing gestational diabetes.</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-blue-600 text-white py-6">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div>
+                <h4 class="font-semibold">Details</h4>
+                <p>Gestational Diabetes Support Platform</p>
+            </div>
+            <div>
+                <h4 class="font-semibold">Contact</h4>
+                <p>Email: support@gdsp.com</p>
+                <p>Phone: 123-456-7890</p>
+            </div>
+            <div>
+                <h4 class="font-semibold">Subscribe</h4>
+                <form>
+                    <input type="email" placeholder="Your email" class="p-2 rounded w-full text-gray-800">
+                    <button class="mt-2 bg-white text-blue-600 py-2 px-4 rounded">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </footer>
+
 </body>
 </html>
