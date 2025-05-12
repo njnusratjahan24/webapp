@@ -4,35 +4,40 @@
     <meta charset="UTF-8">
     <title>GDSP - Exercise Plans</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="js/exercisePlans.js" defer></script>
+    <script src="exerciseplans.js" defer></script>
 </head>
 <body class="bg-gray-100 text-gray-800 flex flex-col min-h-screen">
 
     <!-- Header -->
     <header class="bg-blue-600 text-white py-4">
         <div class="container mx-auto flex justify-between items-center">
-            <h1 class="text-2xl font-bold">Exercise Plans</h1>
+            <h1 class="text-2xl font-bold">GDSP - Exercise Plans</h1>
             <button onclick="goBack()" class="bg-blue-600 text-white py-2 px-4 rounded">Back to Dashboard</button>
         </div>
     </header>
 
     <!-- Main Content -->
     <main class="container mx-auto my-8 flex-grow">
-        <h2 class="text-xl font-semibold mb-4">Recommended Exercises</h2>
+        <h2 class="text-xl font-semibold mb-4">Get Your Personalized Exercise Plan</h2>
+
+        <!-- Input Form -->
         <div class="bg-white p-6 rounded-xl shadow-md">
-            <h3 class="font-semibold">Stretching</h3>
-            <ul class="list-disc ml-6">
-                <li>Cat-Cow Stretch</li>
-                <li>Seated Forward Fold</li>
-            </ul>
+            <label for="age" class="block font-semibold">Age:</label>
+            <input type="number" id="age" class="p-2 mb-4 w-full border rounded" placeholder="Enter your age">
+
+            <label for="weight" class="block font-semibold">Weight (kg):</label>
+            <input type="number" id="weight" class="p-2 mb-4 w-full border rounded" placeholder="Enter your weight">
+
+            <label for="week" class="block font-semibold">Pregnancy Week:</label>
+            <input type="number" id="week" class="p-2 mb-4 w-full border rounded" placeholder="Enter pregnancy week">
+
+            <button onclick="getExercisePlan()" class="bg-blue-600 text-white py-2 px-4 rounded w-full">Generate Exercise Plan</button>
         </div>
 
-        <div class="bg-white p-6 rounded-xl shadow-md mt-6">
-            <h3 class="font-semibold">Strength Training</h3>
-            <ul class="list-disc ml-6">
-                <li>Bodyweight Squats</li>
-                <li>Wall Push-ups</li>
-            </ul>
+        <!-- Exercise Plan Display -->
+        <div id="exercisePlan" class="mt-6 bg-white p-6 rounded-xl shadow-md hidden">
+            <h3 class="text-lg font-semibold">Recommended Exercise Plan:</h3>
+            <ul id="exerciseList" class="list-disc ml-6"></ul>
         </div>
     </main>
 
